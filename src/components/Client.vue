@@ -20,8 +20,13 @@
                 return `${this.name} ${this.lastname}`;
             },
             age() {
+                return this.ageCalculator(this.birthdate);
+            }
+        },
+        methods: {
+            ageCalculator( date ) {
                 let currentDate = new Date();
-                let diff = currentDate - this.birthdate;
+                let diff = currentDate - date;
                 return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
             }
         }
