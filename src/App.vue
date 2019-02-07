@@ -1,18 +1,16 @@
 <template>
   <div id="app" class="main">
-    <span>App Vue-Firebase</span>
+    <span>{{ title }}</span>
     <entrance />
-    <client/>
   </div>
 </template>
 
 <script>
   import Entrance from '@/views/Entrance.vue';
-  import Client from '@/components/Client.vue';
 
   export default {
       name: 'App',
-      components: { Entrance, Client },
+      components: { Entrance },
       data() {
           return {
               title: 'Entrances'
