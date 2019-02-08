@@ -2,7 +2,9 @@
     <div class="entrance">
         <ad/>
         <client/>
+        <email/>
         <tickets/>
+        <signature/>
     </div>
 </template>
 
@@ -10,9 +12,11 @@
     import Client from '@/components/Client.vue';
     import Ad from '@/components/Ad.vue';
     import Tickets from '@/components/Tickets.vue';
+    import Signature from '@/components/Signature.vue';
+    import Email from '@/components/Email.vue';
 
     export default {
-        components: { Client, Ad, Tickets }
+        components: { Client, Ad, Tickets, Signature, Email }
     }
 </script>
 
