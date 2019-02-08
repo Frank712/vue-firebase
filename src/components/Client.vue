@@ -1,7 +1,13 @@
 <template>
     <div class="section">
         <div class="section"><span>{{ fullname }}</span></div>
-        <div class="section"><span>{{ `Age: ${ age } years old` }}</span></div>
+        <div class="attribute">
+            <img :src="profilePhoto" alt="">
+        </div>
+        <div class="attribute">
+            <a :href="bio" target="_blank"> Biography </a>
+        </div>
+        <div class="section"><span>{{ `Age: ${ age } years` }}</span></div>
 
     </div>
 </template>
@@ -12,7 +18,9 @@
             return {
                 name: 'Frank',
                 lastname: 'Lino',
-                birthdate: new Date(1991, 2, 21)
+                birthdate: new Date(1991, 2, 21),
+                profilePhoto: 'https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-1/p160x160/21192048_1524308760970131_7522029329401880272_n.jpg?_nc_cat=111&_nc_ht=scontent-qro1-1.xx&oh=9dc8edb125032e5abfc30bd8741685b2&oe=5CB4875D',
+                bio: 'https://github.com/Frank712'
             }
         },
         computed: {
@@ -45,5 +53,9 @@
 
     .attribute {
         margin: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #553f75;
     }
 </style>

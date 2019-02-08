@@ -1,6 +1,6 @@
 <template>
     <div class="ad">
-        <span>{{ presentations[index] }}</span>
+        <span v-once>{{ presentations[index] }}</span>
     </div>
 </template>
 
